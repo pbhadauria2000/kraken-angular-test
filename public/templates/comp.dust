@@ -1,0 +1,8 @@
+<ul class="phones">
+{#plist}
+    <li class="thumbnail">
+        <a href="#" class="thumb"><img src="{imageUrl}"></a>
+        <p><a href="#">{name}</a><br>{snippet}</p>
+    </li>
+{/plist}
+</ul>

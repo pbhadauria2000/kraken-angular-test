@@ -1,14 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
 <head>
-    <meta charset="utf-8" />
-    <title>{+title /}</title>
-    <link rel="stylesheet" href="css/app.css" />
+    <meta charset="utf-8">
+    <title>Google Phone Gallery</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/angular-1.2.10.js"></script>
+    <script src="js/dust-full-0.3.0.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/common.js"></script>
+    <script src="templates/comp.js"></script>
 </head>
 <body>
 <div id="wrapper">
     {+body /}
 </div>
-<script data-main="js/app" src="components/requirejs/require.js"></script>
 </body>
 </html>

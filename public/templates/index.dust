@@ -1,5 +1,34 @@
 {>"layouts/master" /}
 
 {<body}
-    <h1>{@pre type="content" key="greeting"/}</h1>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span2">
+                <!--Sidebar content-->
+
+                Search: <input ng-model="query">
+                Sort by:
+                <select ng-model="orderProp">
+                    <option value="name">Alphabetical</option>
+                    <option value="age">Newest</option>
+                </select>
+
+            </div>
+            <div class="span10">
+                <div class="well">
+                    {> "comp" /}
+                </div>
+                <div lazycomp="phones1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var phones1 = {
+            data : [{postloadlist}],
+            url : 'phones/phones.json',
+            tmpl: 'comp'
+        };
+
+    </script>
 {/body}
